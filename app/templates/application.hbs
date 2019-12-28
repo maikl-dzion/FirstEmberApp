@@ -1,0 +1,20 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+            <i class="material-icons">filter_6</i>
+            Первая страница
+        </a>
+        
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{#link-to 'users' tagName="li"}}
+                <a href="users">Пользователи</a>
+            {{/link-to}}
+        </ul>
+
+    </div>
+
+</nav>
+
+<div class="container">
+    {{outlet}}
+</div>
